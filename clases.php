@@ -19,3 +19,12 @@ class HIjo extends Padre{
 $objeto = new HIjo();
 //$objeto->metodoPadre();
 $objeto->otroMetodo();
+
+/*========================METODOS ESTATICOS=====================*/
+
+class otrClase{
+    static function metodoSinObjeto(){
+        echo "<br>" . "Sin objeto";
+    }
+}
+otrClase::metodoSinObjeto();
