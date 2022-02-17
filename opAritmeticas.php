@@ -28,6 +28,6 @@ class opAritmeticas{
 $objetoOperaciones = new opAritmeticas();
 
 echo "<br>1.- el resultado es: ".$objetoOperaciones->suma(2,2,2,2,2);
-echo "<br>1.- el resultado es: ".$objetoOperaciones->resta(2,2,2,2,2);
-echo "<br>1.- el resultado es: ".$objetoOperaciones->multi(2,2,2,2,2);
-echo "<br>1.- el resultado es: ".$objetoOperaciones->divide(2,2,2,2,2);
+echo "<br>2.- el resultado es: ".$objetoOperaciones->resta(2,2,2,2,2);
+echo "<br>3.- el resultado es: ".$objetoOperaciones->multi(2,2,2,2,2);
+echo "<br>4.- el resultado es: ".$objetoOperaciones->divide(2,2,2,2,2);
