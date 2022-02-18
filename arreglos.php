@@ -12,9 +12,12 @@ class opAritmeticas{
         $arreglo3[0]="pos cero";
         $arreglo3[4]="pos cuatro";
         //echo $arreglo3[4];
+
+        $arreglo4 = array("pos1"=>"Irving", "pos2"=>"Ramon", "pos3"=>"Talan", "pos4"=>"Zuly");
+        echo $arreglo4["pos3"];
     }
     function suma($datosR){
-        $resultado = $datosR[0] + $datosR[1];
+        $resultado = $datosR[0] + $datosR[1] + $datosR[2] +$datosR[3];
         return $resultado;
     }
 
@@ -40,7 +43,9 @@ class opAritmeticas{
 $datos = array(1,2,3,4);
 
 $objeto = new opAritmeticas();
-//$objeto->arreglo();
+$objeto->arreglo();
 
-echo "El valor es: ".$objeto->suma($datos);
+//echo "El valor es: ".$objeto->suma($datos);
+
+
 

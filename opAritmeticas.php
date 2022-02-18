@@ -21,7 +21,7 @@ class opAritmeticas{
     }
 
     function mostrarValor(){
-        echo $resultado;
+        //echo $resultado;
     }
 }
 
