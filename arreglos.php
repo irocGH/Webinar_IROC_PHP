@@ -21,20 +21,35 @@ class opAritmeticas{
         return $resultado;
     }
 
-    function resta($uno, $dos, $tres, $cuatro, $cinco){
+    /*function resta($uno, $dos, $tres, $cuatro, $cinco){
         $resultado = $uno - $dos - $tres - $cuatro - $cinco;
+        return $resultado;    
+    }*/
+
+    function resta($datosR){
+        $resultado = $datosR[0] - $datosR[1] - $datosR[2] - $datosR[3];
         return $resultado;
     }
 
-    function multi($uno, $dos, $tres, $cuatro, $cinco){
+    /*function multi($uno, $dos, $tres, $cuatro, $cinco){
         $resultado = $uno * $dos * $tres * $cuatro *$cinco;
         return $resultado;
-    }
+    }*/
 
-    function divide($uno, $dos, $tres, $cuatro, $cinco){
-        $resultado = $uno / $dos / $tres / $cuatro / $cinco;
+    function multi($datosR){
+        $resultado = $datosR[0] * $datosR[1] * $datosR[2] * $datosR[3];
         return $resultado;
     }
+
+    /*function divide($uno, $dos, $tres, $cuatro, $cinco){
+        $resultado = $uno / $dos / $tres / $cuatro / $cinco;
+        return $resultado;
+    }*/
+
+    function divide($datosR){
+        $resultado = $datosR[0] / $datosR[1] / $datosR[2] / $datosR[3];
+        return $resultado;
+    }    
 
     /*function mostrarValor(){
         echo $resultado;
@@ -45,7 +60,12 @@ $datos = array(1,2,3,4);
 $objeto = new opAritmeticas();
 $objeto->arreglo();
 
-//echo "El valor es: ".$objeto->suma($datos);
+echo "<br>El valor es: ".$objeto->suma($datos);
 
+echo "<br>El valor es: ".$objeto->resta($datos);
+
+echo "<br>El valor es: ".$objeto->multi($datos);
+
+echo "<br>El valor es: ".$objeto->divide($datos);
 
 
